@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Schools Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <!-- load the amCharts base library -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<!-- in this case, we only need bar charts, so we'll load the appropriate amCharts script -->
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<!-- load the arcgis-rest-js scripts -->
+<script src="https://unpkg.com/@esri/arcgis-rest-request"></script>
+<script src="https://unpkg.com/@esri/arcgis-rest-feature-layer"></script>
+<!-- optionally load an amcharts theme; cedar provides a calcite theme -->
+<script src="https://unpkg.com/@esri/cedar/dist/umd/themes/amCharts/calcite.js"></script>
+<!-- load cedar -->
+<script src="https://unpkg.com/@esri/cedar/dist/umd/cedar.js"></script>
+
+<script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/dark/main.css">
+    <script src="https://js.arcgis.com/4.25/"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="t">
+                <img src="imgs/1.png" alt="cap photo" class="icon">
+                <p class="title">USA Colleges and Universities</p>
+            </div>
+            <div class="stateselector">
+                <p class="choose">Choose a State</p>
+                <select name="" id="stateNames" >
+                    <option value="All">All</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div class="d left">
+                <div class="c" id="noSchoolsPerCity"></div>
+                <div class="c" id="noStudentsPerCity"></div>
+            </div>
+
+            <div class="d middle">
+                <div class="m" id="map"></div>
+                <div class="belowMap">
+                    <div class="d left belowLeft">
+                        <p class="pp">Number Of Enrolled Students in the USA</p>
+                        <div id="noStudentsUSA">21.3M</div>
+                    </div>
+                    <div class="d middle belowMiddle">
+                        <p class="pp">Universities Names List</p>
+                        <select name="" id="uniNames" size="7">
+                            <option value="All">All</option>
+                        </select>
+                    </div>
+                    <div class="d right" >
+                        <p class="ppp">Number Of Colleges and Universities in the USA</p>
+                        <div id="noschoolsUSA">7.7K</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d right">
+                <div class="c" id="noSchoolsPerState"></div>
+                <div class="c" id="noStudentsPerState"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

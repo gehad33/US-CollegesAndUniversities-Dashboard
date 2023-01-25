@@ -1,0 +1,154 @@
+*{
+    padding: 0%;
+    margin:0%;
+    font-family: sans-serif;
+    
+}
+html:not(#middle){
+    background-color: #353535;
+}
+.d{
+    display: inline-block;
+    height: 100%;
+    
+    vertical-align: top;
+}
+
+.content{
+    height: 89%;
+    width:99%;
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.left{
+    width: 25%;
+    background-color: #2B2B2B;
+}
+.middle{
+    width: 48%;
+    
+}
+.right{
+    width: 25%;
+    background-color: #2B2B2B;
+}
+
+.c{
+    height: 50%;
+    background-color: #2B2B2B;
+    border: 0.5px solid #333333;
+    
+}
+.m{
+    height: 70%;
+    background-color: #2B2B2B;
+    margin: 5px;
+}
+.belowMap{
+    height: 30%;
+    color: white;
+    margin-top: 5px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+}
+
+.header{
+    height: 9%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+    align-items: center;
+
+    background-color: #2B2B2B;
+    color: white;
+    
+    margin-bottom: 5px;
+
+}
+
+
+
+#uniNames{
+    width: 100%;
+    background-color: #2B2B2B;
+    color: white;
+}
+.t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.title{
+    display: inline;
+    font-size: 30px;
+    /* margin-left: 20px; */
+}
+.stateselector{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.choose{
+    margin: 3px ;
+}
+
+.belowMiddle{
+    background-color: #2B2B2B;
+    margin: 5px;
+}
+
+.belowLeft{
+    text-align: center;
+}
+
+.pp{
+    margin: 7px;
+}
+.ppp{
+    margin: 7px;
+    font-size:14px;
+}
+#noStudentsUSA{
+    font-size: 40px;
+    font-weight: 200px;
+    margin: auto;
+    padding: 25px;
+}
+#noschoolsUSA{
+    font-size: 40px;
+    font-weight: 200px;
+    margin: auto;
+    padding: 15px;
+}
+
+option{
+    border: 0.5px solid #333333;
+    padding-left: 2px;
+
+}
+option:hover{
+    background-color: rgb(8, 86, 182);
+}
+#uniNames{
+    border: 0.5px solid #333333;
+    
+}
+.icon{
+    width: 40px;
+    margin: 10px;
+    filter: saturate(10);
+}
